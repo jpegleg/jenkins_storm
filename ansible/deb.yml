@@ -1,9 +1,0 @@
----
-- hosts: deb
-  tasks:
-    - name: update and upgrade
-      apt:
-        name: "*"
-        state: latest
-        update_cache: yes
-...
