@@ -1,0 +1,10 @@
+---
+- hosts: main
+  tasks:
+
+  - name: upgrade all packages
+    apt:
+      name: '*'
+      state: latest
+      update_cache: yes
+...
