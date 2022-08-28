@@ -1,0 +1,7 @@
+protean_build {
+  echo "From .protean"
+}
+
+protean_test {
+  docker image ls | grep jenkins_storm
+}
