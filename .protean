@@ -1,3 +1,5 @@
+# protean-gitops CICD functions
+
 protean_build {
   echo "From .protean"
 }
