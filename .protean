@@ -1,11 +1,11 @@
 # protean-gitops CICD functions
 # 
 
-protean_build {
+protean_build() {
   echo "From .protean"
 }
 
-protean_test {
+protean_test() {
   docker image ls | grep jenkins_storm
   cosign verify-attestation --key ../cosign.pub "localhost:5000/jenkins_storm:test"
 }
